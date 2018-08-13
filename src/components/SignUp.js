@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { validateEmail } from '../shared/emailValidator';
+
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
@@ -72,6 +74,7 @@ export class SignUp extends Component {
               <InputAdornment position="end">
                 <IconButton
                   aria-label="Toggle password visibility"
+                  style={{color: this.state.password.length < 6 ? 'grey' : 'green'}}
                   onClick={this.handleClickShowPassword}
                   onMouseDown={e => e.preventDefault()}
                 >
@@ -83,8 +86,14 @@ export class SignUp extends Component {
         </FormControl>
         <br /><br /><br />
 
-        <Button variant="contained" color="primary" fullWidth="true" href="/">
-          Enter
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth={true}
+          href="/"
+          disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
+        >
+          Submit
         </Button>
         <br /><br />
         <Button variant="flat" color="default" href="/">
