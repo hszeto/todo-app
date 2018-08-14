@@ -118,7 +118,7 @@ export class SignUp extends Component {
           disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
           onClick={this.handleSignUp}
         >
-          Submit
+          Sign Up Now!
         </Button>
         <br /><br />
         <Button variant="flat" color="default" href="/">

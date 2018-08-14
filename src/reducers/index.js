@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
 import { SIGN_OUT }      from '../shared/constants';
-// import currentUser       from './currentUser';
-// import isAuthenticated   from './auth';
+import currentUser       from './currentUser';
+import isAuthenticated   from './auth';
 import isLoading         from './loader';
 
 
 const appReducer = combineReducers({
-  // currentUser,
-  // isAuthenticated,
+  currentUser,
+  isAuthenticated,
   isLoading
 });
 

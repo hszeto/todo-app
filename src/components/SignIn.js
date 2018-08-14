@@ -22,9 +22,23 @@ export class SignIn extends Component {
     showPassword: false,
   };
 
-  componentWillMount() {
-    // this.props.processLogout();
-  }
+  // componentWillMount() {
+  //   this.props.processLogout();
+  // }
+
+  // static getDerivedStateFromProps(props, state){
+  //   console.log( "...getDerivedStateFromProps..." );
+  //   console.log( props );
+  //   console.log( state );
+  //   return null;
+  // }
+
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log( "...componentDidUpdate..." );
+  //   console.log( prevState );
+  //   console.log( prevProps.currentUser );
+  //   console.log( this.props.currentUser );
+  // }
 
   handleClickShowPassword = () => {
     this.setState({ showPassword: !this.state.showPassword });
@@ -103,6 +117,13 @@ export class SignIn extends Component {
   }
 };
 
-export default connect(null, {
+const mapStateToProps = (state) => {
+  return({
+    // isLoading: state.isLoading,
+    currentUser: state.currentUser
+  })
+};
+
+export default connect(mapStateToProps, {
   authenticate
 })(SignIn);

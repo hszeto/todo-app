@@ -5,11 +5,11 @@ import Loader from './Loader';
 // import { getCurrentUser, processLogout } from '../actions/auth';
 
 export class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //   };
+  // }
 
   componentDidMount() {
     // this.props.getCurrentUser();
@@ -38,21 +38,13 @@ export class Main extends Component {
     return(
       <div>
         { this.props.isLoading ? <Loader /> : '' }
-
-        <div className='container'>
-          <div className='column tweleve'>
-            <div className='component-inner'>
-              {/* Page Header */}
-              <div>
-                <h1><span className="icon-pyramid" style={{marginRight: 50}}></span>Omega Customer Service Portal</h1>
-                <button className='btn md grey'
-                  id='logout-btn'
-                  onClick={this.onLogoutClick}
-                > Log Out
-                </button>
-              </div>
-            </div>
-          </div>
+        <div>
+          <h1>The Great To-Do's</h1>
+          <button className='btn md grey'
+            id='logout-btn'
+            onClick={this.onLogoutClick}
+          > Log Out
+          </button>
         </div>
       </div>
     );
@@ -60,9 +52,10 @@ export class Main extends Component {
 };
 
 const mapStateToProps = (state) => {
+  console.log( state );
   return({
-    // isLoading: state.isLoading,
-    // currentUser: state.currentUser
+    isLoading: state.isLoading,
+    currentUser: state.currentUser
   })
 };
 
