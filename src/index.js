@@ -16,6 +16,13 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Main from './components/Main';
 
+import { Analytics } from 'aws-amplify';
+import config from './shared/aws-exports';
+import Amplify from 'aws-amplify';
+
+Amplify.configure(config);
+Analytics.configure({ disabled: true });
+
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(

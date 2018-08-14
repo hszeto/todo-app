@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { authenticate } from '../actions/auth';
+
 import { validateEmail } from '../shared/emailValidator';
 
 import Button from '@material-ui/core/Button';
@@ -12,16 +14,8 @@ import InputLabel from '@material-ui/core/InputLabel';
 import TextField from '@material-ui/core/TextField';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
-// import { processLogout } from '../actions/auth';
 
 export class SignIn extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     email: ''
-  //   };
-  // }
-
   state = {
     email: '',
     password: '',
@@ -29,7 +23,6 @@ export class SignIn extends Component {
   };
 
   componentWillMount() {
-    localStorage.removeItem('ocspToken');
     // this.props.processLogout();
   }
 
@@ -40,13 +33,20 @@ export class SignIn extends Component {
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,
-    }, () => console.log( this.state ) );
+    });
   };
+
+  handleSignIn = () => {
+    this.props.authenticate(
+      this.state.email,
+      this.state.password
+    );
+  }
 
   render() {
     return(
       <div  style={{margin: '0 auto', width:'300px', textAlign:'center'}}>
-        <h1>A.T.D.A</h1>
+        <h1>A.T.D.A.</h1>
         <h3>Sign In</h3>
 
         <TextField
@@ -81,14 +81,22 @@ export class SignIn extends Component {
         </FormControl>
         <br /><br /><br />
 
-        <Button variant="contained" color="primary" size="large"
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth={true}
           disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
+          onClick={this.handleSignIn}
         >
           Sign In
         </Button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br /><br />
         <Button variant="flat" color="default" href="/signup">
           Sign Up
+        </Button>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <Button variant="flat" color="default" href="/">
+          Forgot password
         </Button>
       </div>
     );
@@ -96,5 +104,5 @@ export class SignIn extends Component {
 };
 
 export default connect(null, {
-  // processLogout
+  authenticate
 })(SignIn);

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { SIGN_OUT }      from '../actions/constants';
+import { SIGN_OUT }      from '../shared/constants';
 // import currentUser       from './currentUser';
 // import isAuthenticated   from './auth';
 import isLoading         from './loader';

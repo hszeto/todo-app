@@ -1,4 +1,4 @@
-import { START_LOADING, STOP_LOADING } from '../actions/constants';
+import { START_LOADING, STOP_LOADING } from '../shared/constants';
 
 const loaderReducer = (state = false, action) => {
   switch(action.type) {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { register, validateCode } from '../actions/auth';
+
 import { validateEmail } from '../shared/emailValidator';
 
 import Button from '@material-ui/core/Button';
@@ -32,7 +34,7 @@ export class SignUp extends Component {
       position: 'absolute',
       background: 'ivory',
       width: '250px',
-      height: '200px',
+      height: '250px',
       textAlign: 'center',
       padding: '20px',
     };
@@ -45,13 +47,36 @@ export class SignUp extends Component {
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,
-    }, () => console.log( this.state ) );
+    });
   };
+
+  handleSignUp = async() => {
+    try {
+      await this.props.register(
+        this.state.email,
+        this.state.password
+      );
+
+      this.setState({
+        modalOpened: !this.state.modalOpened
+      });
+    }
+    catch(err) {
+      console.log(err);
+    }
+  }
+
+  handleCode = () => {
+    this.props.validateCode(
+      this.state.email,
+      this.state.code
+    );
+  }
 
   render() {
     return(
       <div  style={{margin: '0 auto', width:'300px', textAlign:'center'}}>
-        <h1>A.T.D.A</h1>
+        <h1>A.T.D.A.</h1>
         <h3>Sign Up</h3>
 
         <TextField
@@ -90,8 +115,8 @@ export class SignUp extends Component {
           variant="contained"
           color="primary"
           fullWidth={true}
-          href="/"
           disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
+          onClick={this.handleSignUp}
         >
           Submit
         </Button>
@@ -119,6 +144,14 @@ export class SignUp extends Component {
             <br /><br />
             <b>Check your email for the code.</b>
             <TextField
+              id="email"
+              label="Email"
+              value={this.state.email}
+              onChange={this.handleChange('email')}
+              margin="normal"
+            />
+            <br />
+            <TextField
               id="code"
               label="Enter Code"
               value={this.state.code}
@@ -126,7 +159,11 @@ export class SignUp extends Component {
               margin="normal"
             />
             <br /><br />
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.handleCode}
+            >
               Submit
             </Button>
           </div>
@@ -138,5 +175,5 @@ export class SignUp extends Component {
 };
 
 export default connect(null, {
-  // processLogout
+  register, validateCode
 })(SignUp);
