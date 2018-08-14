@@ -1,6 +1,6 @@
 import { START_LOADING, STOP_LOADING } from '../shared/constants';
 
-const loaderReducer = (state = false, action) => {
+export default (state = false, action) => {
   switch(action.type) {
     case START_LOADING:
       return true;
@@ -10,5 +10,3 @@ const loaderReducer = (state = false, action) => {
       return state;
   }
 };
-
-export default loaderReducer;
