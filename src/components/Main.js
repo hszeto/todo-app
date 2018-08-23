@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Loader from './Loader';
-// import { getCurrentUser, processLogout } from '../actions/auth';
+import { signOut } from '../actions/auth';
 
 export class Main extends Component {
   // constructor(props) {
@@ -25,7 +25,7 @@ export class Main extends Component {
   }
 
   onLogoutClick = () => {
-    // this.props.processLogout();
+    this.props.signOut();
   }
 
   onLinkClick = (tab) => {
@@ -60,5 +60,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-  // getCurrentUser, processLogout
+  signOut
 })(Main);

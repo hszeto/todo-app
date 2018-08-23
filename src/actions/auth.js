@@ -1,6 +1,6 @@
 import { Auth } from 'aws-amplify';
 import history from '../components/History'
-import { SET_USER, SIGN_IN,
+import { SET_USER, SIGN_IN, SIGN_OUT,
          START_LOADING, STOP_LOADING } from '../shared/constants';
 
 export const authenticate = (email, password) => {
@@ -62,6 +62,18 @@ export const validateCode = (email, code) => {
       });
   }
 };
+
+export const signOut = () => {
+  return dispatch => {
+    Auth.signOut()
+      .then(data => {
+        dispatch({ type: SIGN_OUT });
+      })
+      .catch(err => {
+        handleError(err);
+      });
+  }
+}
 
 const handleError = (err) => {
   const msg = err.message || err;
