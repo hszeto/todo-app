@@ -1,9 +1,13 @@
 import React from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Loader = () => {
   return(
-    <div id="loader-background">
-      <div id="loader"></div>
+    <div id="loader">
+      <CircularProgress
+        size={68} 
+        thickness={8}
+      />
     </div>
   );
 };

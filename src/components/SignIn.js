@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { authenticate } from '../actions/auth';
 
 import { validateEmail } from '../shared/emailValidator';
+import Loader from './Loader';
 
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
@@ -59,61 +60,65 @@ export class SignIn extends Component {
 
   render() {
     return(
-      <div className="auth-card-outer">
-        <div className="auth-card-inner">
-          <h1>A.T.D.A.</h1>
-          <h3>Sign In</h3>
+      <div>
+        { this.props.isLoading 
+          ? <Loader /> 
+          : <div className="auth-card-outer">
+              <div className="auth-card-inner">
+                <h1>A.T.D.A.</h1>
+                <h3>Sign In</h3>
+                <TextField
+                  id="email"
+                  label="Email"
+                  value={this.state.email}
+                  onChange={this.handleChange('email')}
+                  margin="normal"
+                />
+                <br /><br />
 
-          <TextField
-            id="email"
-            label="Email"
-            value={this.state.email}
-            onChange={this.handleChange('email')}
-            margin="normal"
-          />
-          <br /><br />
+                <FormControl>
+                  <InputLabel htmlFor="adornment-password">Password</InputLabel>
+                  <Input
+                    id="adornment-password"
+                    type={this.state.showPassword ? 'text' : 'password'}
+                    value={this.state.password}
+                    onChange={this.handleChange('password')}
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="Toggle password visibility"
+                          style={{color: this.state.password.length < 6 ? 'grey' : 'green'}}
+                          onClick={this.handleClickShowPassword}
+                          onMouseDown={e => e.preventDefault()}
+                        >
+                          {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    }
+                  />
+                </FormControl>
+                <br /><br /><br />
 
-          <FormControl>
-            <InputLabel htmlFor="adornment-password">Password</InputLabel>
-            <Input
-              id="adornment-password"
-              type={this.state.showPassword ? 'text' : 'password'}
-              value={this.state.password}
-              onChange={this.handleChange('password')}
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="Toggle password visibility"
-                    style={{color: this.state.password.length < 6 ? 'grey' : 'green'}}
-                    onClick={this.handleClickShowPassword}
-                    onMouseDown={e => e.preventDefault()}
-                  >
-                    {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-          <br /><br /><br />
-
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth={true}
-            disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
-            onClick={this.handleSignIn}
-          >
-            Sign In
-          </Button>
-          <br /><br />
-          <Button variant="flat" color="default" href="/signup">
-            Sign Up
-          </Button>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <Button variant="flat" color="default" href="/">
-            Forgot password
-          </Button>
-        </div>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  fullWidth={true}
+                  disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
+                  onClick={this.handleSignIn}
+                >
+                  Sign In
+                </Button>
+                <br /><br />
+                <Button variant="flat" color="default" href="/signup">
+                  Sign Up
+                </Button>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <Button variant="flat" color="default" href="/">
+                  Forgot password
+                </Button>
+              </div>
+            </div>
+        }
       </div>
     );
   }
@@ -121,7 +126,7 @@ export class SignIn extends Component {
 
 const mapStateToProps = (state) => {
   return({
-    // isLoading: state.isLoading,
+    isLoading: state.isLoading,
     currentUser: state.currentUser
   })
 };
