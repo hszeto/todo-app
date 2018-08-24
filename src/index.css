@@ -4,6 +4,32 @@ body {
   font-family: sans-serif;
 }
 
+#logout-btn {
+  float: right;
+}
+.container {
+  padding: 30px;
+}
+.auth-card-outer{
+  color:slategrey;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.auth-card-inner{
+  align-self: center;
+  background-color: linen;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+}
+
+#header {
+  font-size: 3rem;
+}
+
 /* Loader */
 #loader-background {
   position: absolute;

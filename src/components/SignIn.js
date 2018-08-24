@@ -59,59 +59,61 @@ export class SignIn extends Component {
 
   render() {
     return(
-      <div  style={{margin: '0 auto', width:'300px', textAlign:'center'}}>
-        <h1>A.T.D.A.</h1>
-        <h3>Sign In</h3>
+      <div className="auth-card-outer">
+        <div className="auth-card-inner">
+          <h1>A.T.D.A.</h1>
+          <h3>Sign In</h3>
 
-        <TextField
-          id="email"
-          label="Email"
-          value={this.state.email}
-          onChange={this.handleChange('email')}
-          margin="normal"
-        />
-        <br /><br />
-
-        <FormControl>
-          <InputLabel htmlFor="adornment-password">Password</InputLabel>
-          <Input
-            id="adornment-password"
-            type={this.state.showPassword ? 'text' : 'password'}
-            value={this.state.password}
-            onChange={this.handleChange('password')}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="Toggle password visibility"
-                  style={{color: this.state.password.length < 6 ? 'grey' : 'green'}}
-                  onClick={this.handleClickShowPassword}
-                  onMouseDown={e => e.preventDefault()}
-                >
-                  {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
-                </IconButton>
-              </InputAdornment>
-            }
+          <TextField
+            id="email"
+            label="Email"
+            value={this.state.email}
+            onChange={this.handleChange('email')}
+            margin="normal"
           />
-        </FormControl>
-        <br /><br /><br />
+          <br /><br />
 
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth={true}
-          disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
-          onClick={this.handleSignIn}
-        >
-          Sign In
-        </Button>
-        <br /><br />
-        <Button variant="flat" color="default" href="/signup">
-          Sign Up
-        </Button>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <Button variant="flat" color="default" href="/">
-          Forgot password
-        </Button>
+          <FormControl>
+            <InputLabel htmlFor="adornment-password">Password</InputLabel>
+            <Input
+              id="adornment-password"
+              type={this.state.showPassword ? 'text' : 'password'}
+              value={this.state.password}
+              onChange={this.handleChange('password')}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="Toggle password visibility"
+                    style={{color: this.state.password.length < 6 ? 'grey' : 'green'}}
+                    onClick={this.handleClickShowPassword}
+                    onMouseDown={e => e.preventDefault()}
+                  >
+                    {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+          <br /><br /><br />
+
+          <Button
+            variant="contained"
+            color="primary"
+            fullWidth={true}
+            disabled={(!validateEmail(this.state.email) || this.state.password.length < 6)}
+            onClick={this.handleSignIn}
+          >
+            Sign In
+          </Button>
+          <br /><br />
+          <Button variant="flat" color="default" href="/signup">
+            Sign Up
+          </Button>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <Button variant="flat" color="default" href="/">
+            Forgot password
+          </Button>
+        </div>
       </div>
     );
   }
