@@ -72,11 +72,12 @@ export class SignIn extends Component {
                   label="Email"
                   value={this.state.email}
                   onChange={this.handleChange('email')}
+                  className="full-width"
                   margin="normal"
                 />
                 <br /><br />
 
-                <FormControl>
+                <FormControl className="full-width">
                   <InputLabel htmlFor="adornment-password">Password</InputLabel>
                   <Input
                     id="adornment-password"

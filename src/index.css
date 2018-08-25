@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+.full-width{
+  width: 100%;
+}
+
 #logout-btn {
   float: right;
 }
