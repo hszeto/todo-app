@@ -3,12 +3,14 @@ import { SIGN_OUT }      from '../shared/constants';
 import currentUser       from './currentUser';
 import isAuthenticated   from './auth';
 import isLoading         from './loader';
+import todos             from './todos';
 
 
 const appReducer = combineReducers({
   currentUser,
   isAuthenticated,
-  isLoading
+  isLoading,
+  todos
 });
 
 export default (state, action) => {

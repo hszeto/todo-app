@@ -26,20 +26,6 @@ export class SignUp extends Component {
     modalOpened: false
   };
 
-  modalStyle = () => {
-    return {
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      position: 'absolute',
-      background: 'ivory',
-      width: '250px',
-      height: '250px',
-      textAlign: 'center',
-      padding: '20px',
-    };
-  };
-
   handleClickShowPassword = () => {
     this.setState({ showPassword: !this.state.showPassword });
   };
@@ -138,7 +124,8 @@ export class SignUp extends Component {
             open={this.state.modalOpened}
             onClose={()=>this.setState({modalOpened: false})}
           >
-            <div style={this.modalStyle()} >
+            <div className="modal" >
+            {/*<div style={this.modalStyle()} >*/}
               <div
                 style={{float:'right'}}
                 onClick={()=>this.setState({modalOpened: false})}

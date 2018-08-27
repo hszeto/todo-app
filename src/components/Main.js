@@ -1,50 +1,99 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Loader from './Loader';
-import { signOut } from '../actions/auth';
+import { getTodos, createTodo } from '../actions/todos';
+
+import Header from './Header';
+import Todo from './Todo';
+
+import List          from '@material-ui/core/List';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import Modal         from '@material-ui/core/Modal';
+import TextField     from '@material-ui/core/TextField';
+import Button        from '@material-ui/core/Button';
 
 export class Main extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //   };
-  // }
+  state = {
+    open: false,
+    todoTitle: ''
+  };
 
-  componentDidMount() {
-    // this.props.getCurrentUser();
+  async componentDidMount() {
+    try {
+      await this.props.getTodos(this.props.currentUser.jwt);
+    }
+    catch(err) {
+      console.log( err );
+    }
   }
 
-  componentWillReceiveProps(nextProps) {
-    // const { roles } = nextProps.currentUser;
+  handleClose = () => {
+    this.setState({ open: false });
+  };
 
-    // if (roles && !roles.includes('portal_user')) {
-    //   this.props.processLogout();
-    //   alert('You are not authorized.');
-    // }
-  }
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
 
-  onLogoutClick = () => {
-    this.props.signOut();
-  }
+  handleCreateTodo = () => {
+    this.props.createTodo(this.state.todoTitle, this.props.currentUser.jwt);
 
-  onLinkClick = (tab) => {
-    // this.setState({
-    //   currentTab: tab
-    // });
+    this.setState({ todoTitle: '' });
+
+    this.handleClose();
   };
 
   render() {
     return(
-      <div>
-        { this.props.isLoading ? <Loader /> : '' }
+      <div className="container">
+        <Header />
         <div>
-          <h1>The Great To-Do's</h1>
-          <button className='btn md grey'
-            id='logout-btn'
-            onClick={this.onLogoutClick}
-          > Log Out
-          </button>
+          <Button
+            variant="contained"
+            color="primary"
+            className="pull-right"
+            onClick={()=>this.setState({open: true})}
+          >
+            Create New To-Do
+          </Button>
+          <List
+          component="nav"
+          subheader={<ListSubheader component="div">To-Do List:</ListSubheader>}
+          >
+            {this.props.todos.map(todo => {
+              return (
+                <Todo key={todo.id} todo={todo} />
+              );
+            })}
+          </List>
+
+        {/* MODAL */}
+        <Modal
+          aria-labelledby="simple-modal-title"
+          aria-describedby="simple-modal-description"
+          open={this.state.open}
+          onClose={this.handleClose}
+        >
+          <div className="modal" >
+            <TextField
+              id="todoTitle"
+              label="To-Do Title"
+              value={this.state.todoTitle}
+              onChange={this.handleChange('todoTitle')}
+              margin="normal"
+            />&nbsp;
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={this.handleCreateTodo}
+              >
+              Save
+            </Button>
+          </div>
+        </Modal>
+        {/* Close Modal */}
         </div>
       </div>
     );
@@ -52,13 +101,12 @@ export class Main extends Component {
 };
 
 const mapStateToProps = (state) => {
-  console.log( state );
   return({
-    isLoading: state.isLoading,
-    currentUser: state.currentUser
+    currentUser: state.currentUser,
+    todos: state.todos
   })
 };
 
 export default connect(mapStateToProps, {
-  signOut
+  getTodos, createTodo
 })(Main);
