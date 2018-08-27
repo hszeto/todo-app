@@ -9,14 +9,14 @@ export const authenticate = (email, password) => {
 
     Auth.signIn(email, password)
       .then(user => {
-        history.push('/main');
-
-        dispatch({ type: SIGN_IN });
-
         dispatch({
           type: SET_USER,
           payload: user
         });
+
+        history.push('/main');
+
+        dispatch({ type: SIGN_IN });
 
         dispatch({ type: STOP_LOADING });
       })
