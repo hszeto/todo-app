@@ -13,11 +13,12 @@ export class Header extends Component {
   render() {
     return(
       <div id="header">
-        <span>To-Do's for: {this.props.currentUser.email}</span>
+        <span>Hello: {this.props.currentUser.email}</span>
         <Button
           id='logout-btn'
           variant="contained"
           color="primary"
+          className="pull-right"
           onClick={this.onLogoutClick}
         > Log Out
         </Button>
@@ -28,7 +29,6 @@ export class Header extends Component {
 };
 
 const mapStateToProps = (state) => {
-  console.log( state );
   return({
     currentUser: state.currentUser
   })
