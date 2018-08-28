@@ -15,7 +15,6 @@ import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
-// import { processLogout } from '../actions/auth';
 
 export class SignUp extends Component {
   state = {
@@ -125,7 +124,6 @@ export class SignUp extends Component {
             onClose={()=>this.setState({modalOpened: false})}
           >
             <div className="modal" >
-            {/*<div style={this.modalStyle()} >*/}
               <div
                 style={{float:'right'}}
                 onClick={()=>this.setState({modalOpened: false})}

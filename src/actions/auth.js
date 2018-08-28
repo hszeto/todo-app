@@ -50,7 +50,6 @@ export const validateCode = (email, code) => {
   return dispatch => {
     Auth.confirmSignUp(email, code)
       .then(data => {
-        console.log(data);
         alert("Registration success! Please login now.");
         history.push('/');
       })
