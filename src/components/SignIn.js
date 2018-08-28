@@ -99,6 +99,9 @@ export class SignIn extends Component {
                 <Button variant="flat" color="default" href="/">
                   Forgot password
                 </Button>
+                <div className="auth-footer">
+                  Authentications powered by Amazon Cognito
+                </div>
               </div>
             </div>
         }

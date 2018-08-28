@@ -156,6 +156,9 @@ export class SignUp extends Component {
             </div>
           </Modal>
           {/*   MODAL END   */}
+          <div className="auth-footer">
+            Authentications powered by Amazon Cognito
+          </div>
         </div>
       </div>
     );
