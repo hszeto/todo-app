@@ -36,10 +36,7 @@ export const register = (email, password) => {
     return new Promise((resolve, reject) => {
       Auth.signUp({
           username: email,
-          password: password,
-          attributes: {
-            email: email
-          }
+          password: password
         })
         .then(data => {
           resolve();
