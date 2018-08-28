@@ -29,9 +29,6 @@ export const authenticate = (email, password) => {
 };
 
 export const register = (email, password) => {
-  console.log( "*** register ***" );
-  console.log( email );
-  console.log( password );
   return dispatch => {
     return new Promise((resolve, reject) => {
       Auth.signUp({
