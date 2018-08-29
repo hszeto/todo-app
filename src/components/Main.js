@@ -69,31 +69,35 @@ export class Main extends Component {
             })}
           </List>
 
-        {/* MODAL */}
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={this.state.open}
-          onClose={this.handleClose}
-        >
-          <div className="modal" >
-            <TextField
-              id="todoTitle"
-              label="To-Do Title"
-              value={this.state.todoTitle}
-              onChange={this.handleChange('todoTitle')}
-              margin="normal"
-            />&nbsp;
-            <Button
-                variant="contained"
-                color="primary"
-                onClick={this.handleCreateTodo}
-              >
-              Save
-            </Button>
+          {/* MODAL */}
+          <Modal
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            open={this.state.open}
+            onClose={this.handleClose}
+          >
+            <div className="modal" >
+              <TextField
+                id="todoTitle"
+                label="To-Do Title"
+                value={this.state.todoTitle}
+                onChange={this.handleChange('todoTitle')}
+                margin="normal"
+              />&nbsp;
+              <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={this.handleCreateTodo}
+                >
+                Save
+              </Button>
+            </div>
+          </Modal>
+          {/* Close Modal */}
+
+          <div className="footer">
+            Styled with <a href="https://material-ui.com/demos/lists/" target="_blank">Material-Ui</a>
           </div>
-        </Modal>
-        {/* Close Modal */}
         </div>
       </div>
     );
