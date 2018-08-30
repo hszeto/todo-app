@@ -49,14 +49,14 @@ export class SignUp extends Component {
     catch(err) {
       console.log(err);
     }
-  }
+  };
 
   handleCode = () => {
     this.props.validateCode(
       this.state.email,
       this.state.code
     );
-  }
+  };
 
   render() {
     return(

@@ -59,6 +59,37 @@ export const validateCode = (email, code) => {
   }
 };
 
+
+export const resetPassword = email => {
+  return dispatch => {
+    Auth.forgotPassword(email)
+      .then(data => {
+        console.log(data)
+        alert("Check your email for the code.");
+      })
+      .catch(err => {
+        handleError(err);
+      });
+  }
+};
+
+export const validateResetPasswordCode = (email, code, newPassword) => {
+  console.log( email +" "+ code +" "+ newPassword );
+  return dispatch => {
+    return new Promise((resolve, reject) => {
+      Auth.forgotPasswordSubmit(email, code, newPassword)
+        .then(data => {
+          alert("Password reset success! Please login now.");
+          resolve(true);
+        })
+        .catch(err => {
+          handleError(err);
+          reject(false);
+        });
+    });
+  }
+};
+
 export const signOut = () => {
   return dispatch => {
     Auth.signOut()
