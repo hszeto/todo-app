@@ -96,7 +96,7 @@ export class Main extends Component {
           {/* Close Modal */}
 
           <div className="footer">
-            Styled with <a href="https://material-ui.com/demos/lists/" target="_blank">Material-Ui</a>
+            Styled with <a href="https://material-ui.com/demos/lists/" target="_blank" rel="noopener noreferrer">Material-Ui</a>
           </div>
         </div>
       </div>

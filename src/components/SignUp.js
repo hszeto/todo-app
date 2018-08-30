@@ -157,7 +157,7 @@ export class SignUp extends Component {
           </Modal>
           {/*   MODAL END   */}
           <div className="auth-footer">
-            Authentications powered by <a href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html" target="_blank">Amazon Cognito</a>
+            Authentications powered by <a href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html" target="_blank" rel="noopener noreferrer">Amazon Cognito</a>
           </div>
         </div>
       </div>
