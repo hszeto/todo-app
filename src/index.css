@@ -54,6 +54,10 @@ body {
   justify-content: space-between;
 }
 
+#main-list{
+  margin-bottom: 50px;
+}
+
 .footer{
   position: fixed;
   left: 0;
