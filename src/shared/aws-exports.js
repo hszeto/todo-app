@@ -4,4 +4,5 @@ export default {
   region: 'us-west-2',
   userPoolId: 'us-west-2_CU8GarjcW',
   userPoolWebClientId: '45p9h59afkopigqe9rjaofc9dl',
+  mandatorySignIn: true,
 }
