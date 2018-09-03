@@ -76,7 +76,9 @@ export class SignIn extends Component {
           ? <Loader /> 
           : <div className="auth-card-outer" id="sign-in">
               <div className="auth-card-inner">
-                <h1>React JS To-Do App</h1>
+                <div className="app-name">
+                  <b>React JS To-Do App</b>
+                </div>
                 <h3>Sign In</h3>
                 <TextField
                   id="email"

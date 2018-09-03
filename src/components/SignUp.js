@@ -62,7 +62,9 @@ export class SignUp extends Component {
     return(
        <div className="auth-card-outer" id="sign-up">
         <div className="auth-card-inner">
-          <h1>React JS To-Do App</h1>
+          <div className="app-name">
+            <b>React JS To-Do App</b>
+          </div>
           <h3>Sign Up</h3>
 
           <TextField

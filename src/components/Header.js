@@ -12,16 +12,18 @@ export class Header extends Component {
 
   render() {
     return(
-      <div id="header">
-        <span>Hello: {this.props.currentUser.email}</span>
-        <Button
-          id='logout-btn'
-          variant="contained"
-          color="primary"
-          className="pull-right"
-          onClick={this.onLogoutClick}
-        > Log Out
-        </Button>
+      <div>
+        <div id="header">
+          <div>Hi: {this.props.currentUser.email}</div>
+          &nbsp;
+          <Button
+            id='logout-btn'
+            variant="contained"
+            color="primary"
+            onClick={this.onLogoutClick}
+          > Log Out
+          </Button>
+        </div>
         <hr />
       </div>
     );
