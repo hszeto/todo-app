@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { pingServer } from '../actions/ping';
 import { authenticate, resetPassword,
          validateResetPasswordCode } from '../actions/auth';
 
@@ -28,6 +29,10 @@ export class SignIn extends Component {
     code: '',
     modalOpened: false
   };
+
+  componentDidMount() {
+    this.props.pingServer();
+  }
 
   handleClickShowPassword = () => {
     this.setState({ showPassword: !this.state.showPassword });
@@ -229,5 +234,8 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-  authenticate, resetPassword, validateResetPasswordCode
+  authenticate,
+  pingServer,
+  resetPassword,
+  validateResetPasswordCode
 })(SignIn);
