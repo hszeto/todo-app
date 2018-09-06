@@ -7,11 +7,6 @@ export const pingServer = () => {
       })
         .then(res => res.ok ? res.json() : Promise.reject(res))
         .then(json => console.log( "Server Ready..." ))
-        .catch(err => handleError(err));
+        .catch(err => console.log(err));
   }
-};
-
-const handleError = (err) => {
-  console.log(err);
-  alert("Server Error. Please try again later.");
 };
