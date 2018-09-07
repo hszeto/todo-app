@@ -1,0 +1,3202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignIn />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="auth-card-outer"
+        id="sign-in"
+>
+        <div
+                className="auth-card-inner"
+        >
+                <div
+                        className="app-name"
+                >
+                        <b>
+                                React JS To-Do App
+                        </b>
+                </div>
+                <h3>
+                        Sign In
+                </h3>
+                <TextField
+                        className="full-width"
+                        id="email"
+                        label="Email"
+                        margin="normal"
+                        onChange={[Function]}
+                        required={false}
+                        select={false}
+                        value=""
+                />
+                <br />
+                <br />
+                <WithStyles(FormControl)
+                        className="full-width"
+                >
+                        <WithStyles(InputLabel)
+                                htmlFor="adornment-password"
+                        >
+                                Password
+                        </WithStyles(InputLabel)>
+                        <WithStyles(Input)
+                                endAdornment={
+                                        <WithStyles(InputAdornment)
+                                                position="end"
+                                        >
+                                                <WithStyles(IconButton)
+                                                        aria-label="Toggle password visibility"
+                                                        onClick={[Function]}
+                                                        onMouseDown={[Function]}
+                                                        style={
+                                                                Object {
+                                                                        "color": "grey",
+                                                                      }
+                                                        }
+                                                >
+                                                        <pure(Visibility) />
+                                                </WithStyles(IconButton)>
+                                        </WithStyles(InputAdornment)>
+                                }
+                                id="adornment-password"
+                                onChange={[Function]}
+                                type="password"
+                                value=""
+                        />
+                </WithStyles(FormControl)>
+                <br />
+                <br />
+                <br />
+                <WithStyles(Button)
+                        color="primary"
+                        disabled={true}
+                        fullWidth={true}
+                        onClick={[Function]}
+                        variant="contained"
+                >
+                        Sign In
+                </WithStyles(Button)>
+                <br />
+                <br />
+                <WithStyles(Button)
+                        color="default"
+                        href="/signup"
+                        variant="flat"
+                >
+                        Sign Up
+                </WithStyles(Button)>
+                  |  
+                <WithStyles(Button)
+                        color="default"
+                        onClick={[Function]}
+                        variant="flat"
+                >
+                        Forgot password
+                </WithStyles(Button)>
+                <WithStyles(Modal)
+                        aria-describedby="simple-modal-description"
+                        aria-labelledby="simple-modal-title"
+                        onClose={[Function]}
+                        open={false}
+                >
+                        <div
+                                className="modal"
+                        >
+                                <div
+                                        onClick={[Function]}
+                                        style={
+                                                Object {
+                                                        "float": "right",
+                                                      }
+                                        }
+                                >
+                                        x
+                                </div>
+                                <br />
+                                <br />
+                                <b>
+                                        A code will be sent to you email
+                                </b>
+                                <TextField
+                                        label="Email"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                                />
+                                <br />
+                                <br />
+                                <WithStyles(Button)
+                                        color="primary"
+                                        onClick={[Function]}
+                                        variant="contained"
+                                >
+                                        Request Code
+                                </WithStyles(Button)>
+                                <br />
+                                <br />
+                                <hr />
+                                <br />
+                                <b>
+                                        If you have the code,
+                                        <br />
+                                        enter your email, code
+                                        <br />
+                                        and new password
+                                </b>
+                                <TextField
+                                        label="Email"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                                />
+                                <TextField
+                                        id="code"
+                                        label="Enter Code"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                                />
+                                <WithStyles(FormControl)
+                                        className="full-width"
+                                >
+                                        <WithStyles(InputLabel)
+                                                htmlFor="adornment-password"
+                                        >
+                                                New Password
+                                        </WithStyles(InputLabel)>
+                                        <WithStyles(Input)
+                                                endAdornment={
+                                                        <WithStyles(InputAdornment)
+                                                                position="end"
+                                                        >
+                                                                <WithStyles(IconButton)
+                                                                        aria-label="Toggle password visibility"
+                                                                        onClick={[Function]}
+                                                                        onMouseDown={[Function]}
+                                                                        style={
+                                                                                Object {
+                                                                                        "color": "grey",
+                                                                                      }
+                                                                        }
+                                                                >
+                                                                        <pure(Visibility) />
+                                                                </WithStyles(IconButton)>
+                                                        </WithStyles(InputAdornment)>
+                                                }
+                                                id="adornment-password"
+                                                onChange={[Function]}
+                                                type="password"
+                                                value=""
+                                        />
+                                </WithStyles(FormControl)>
+                                <br />
+                                <br />
+                                <WithStyles(Button)
+                                        color="primary"
+                                        onClick={[Function]}
+                                        variant="contained"
+                                >
+                                        Submit
+                                </WithStyles(Button)>
+                        </div>
+                </WithStyles(Modal)>
+                <div
+                        className="auth-footer"
+                >
+                        Authentications powered by 
+                        <a
+                                href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                                AWS Cognito
+                        </a>
+                        <br />
+                        <br />
+                        <a
+                                href="https://www.henryszeto.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                                Henry Szeto
+                        </a>
+                         2018
+                </div>
+        </div>
+</div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="auth-card-inner"
+>
+          <div
+                    className="app-name"
+          >
+                    <b>
+                              React JS To-Do App
+                    </b>
+          </div>
+          <h3>
+                    Sign In
+          </h3>
+          <TextField
+                    className="full-width"
+                    id="email"
+                    label="Email"
+                    margin="normal"
+                    onChange={[Function]}
+                    required={false}
+                    select={false}
+                    value=""
+          />
+          <br />
+          <br />
+          <WithStyles(FormControl)
+                    className="full-width"
+          >
+                    <WithStyles(InputLabel)
+                              htmlFor="adornment-password"
+                    >
+                              Password
+                    </WithStyles(InputLabel)>
+                    <WithStyles(Input)
+                              endAdornment={
+                                        <WithStyles(InputAdornment)
+                                                  position="end"
+                                        >
+                                                  <WithStyles(IconButton)
+                                                            aria-label="Toggle password visibility"
+                                                            onClick={[Function]}
+                                                            onMouseDown={[Function]}
+                                                            style={
+                                                                      Object {
+                                                                                "color": "grey",
+                                                                              }
+                                                            }
+                                                  >
+                                                            <pure(Visibility) />
+                                                  </WithStyles(IconButton)>
+                                        </WithStyles(InputAdornment)>
+                              }
+                              id="adornment-password"
+                              onChange={[Function]}
+                              type="password"
+                              value=""
+                    />
+          </WithStyles(FormControl)>
+          <br />
+          <br />
+          <br />
+          <WithStyles(Button)
+                    color="primary"
+                    disabled={true}
+                    fullWidth={true}
+                    onClick={[Function]}
+                    variant="contained"
+          >
+                    Sign In
+          </WithStyles(Button)>
+          <br />
+          <br />
+          <WithStyles(Button)
+                    color="default"
+                    href="/signup"
+                    variant="flat"
+          >
+                    Sign Up
+          </WithStyles(Button)>
+            |  
+          <WithStyles(Button)
+                    color="default"
+                    onClick={[Function]}
+                    variant="flat"
+          >
+                    Forgot password
+          </WithStyles(Button)>
+          <WithStyles(Modal)
+                    aria-describedby="simple-modal-description"
+                    aria-labelledby="simple-modal-title"
+                    onClose={[Function]}
+                    open={false}
+          >
+                    <div
+                              className="modal"
+                    >
+                              <div
+                                        onClick={[Function]}
+                                        style={
+                                                  Object {
+                                                            "float": "right",
+                                                          }
+                                        }
+                              >
+                                        x
+                              </div>
+                              <br />
+                              <br />
+                              <b>
+                                        A code will be sent to you email
+                              </b>
+                              <TextField
+                                        label="Email"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                              />
+                              <br />
+                              <br />
+                              <WithStyles(Button)
+                                        color="primary"
+                                        onClick={[Function]}
+                                        variant="contained"
+                              >
+                                        Request Code
+                              </WithStyles(Button)>
+                              <br />
+                              <br />
+                              <hr />
+                              <br />
+                              <b>
+                                        If you have the code,
+                                        <br />
+                                        enter your email, code
+                                        <br />
+                                        and new password
+                              </b>
+                              <TextField
+                                        label="Email"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                              />
+                              <TextField
+                                        id="code"
+                                        label="Enter Code"
+                                        margin="normal"
+                                        onChange={[Function]}
+                                        required={false}
+                                        select={false}
+                                        value=""
+                              />
+                              <WithStyles(FormControl)
+                                        className="full-width"
+                              >
+                                        <WithStyles(InputLabel)
+                                                  htmlFor="adornment-password"
+                                        >
+                                                  New Password
+                                        </WithStyles(InputLabel)>
+                                        <WithStyles(Input)
+                                                  endAdornment={
+                                                            <WithStyles(InputAdornment)
+                                                                      position="end"
+                                                            >
+                                                                      <WithStyles(IconButton)
+                                                                                aria-label="Toggle password visibility"
+                                                                                onClick={[Function]}
+                                                                                onMouseDown={[Function]}
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "color": "grey",
+                                                                                                  }
+                                                                                }
+                                                                      >
+                                                                                <pure(Visibility) />
+                                                                      </WithStyles(IconButton)>
+                                                            </WithStyles(InputAdornment)>
+                                                  }
+                                                  id="adornment-password"
+                                                  onChange={[Function]}
+                                                  type="password"
+                                                  value=""
+                                        />
+                              </WithStyles(FormControl)>
+                              <br />
+                              <br />
+                              <WithStyles(Button)
+                                        color="primary"
+                                        onClick={[Function]}
+                                        variant="contained"
+                              >
+                                        Submit
+                              </WithStyles(Button)>
+                    </div>
+          </WithStyles(Modal)>
+          <div
+                    className="auth-footer"
+          >
+                    Authentications powered by 
+                    <a
+                              href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              AWS Cognito
+                    </a>
+                    <br />
+                    <br />
+                    <a
+                              href="https://www.henryszeto.com"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              Henry Szeto
+                    </a>
+                     2018
+          </div>
+</div>,
+        "className": "auth-card-outer",
+        "id": "sign-in",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="app-name"
+>
+              <b>
+                            React JS To-Do App
+              </b>
+</div>,
+            <h3>
+              Sign In
+</h3>,
+            <TextField
+              className="full-width"
+              id="email"
+              label="Email"
+              margin="normal"
+              onChange={[Function]}
+              required={false}
+              select={false}
+              value=""
+/>,
+            <br />,
+            <br />,
+            <WithStyles(FormControl)
+              className="full-width"
+>
+              <WithStyles(InputLabel)
+                            htmlFor="adornment-password"
+              >
+                            Password
+              </WithStyles(InputLabel)>
+              <WithStyles(Input)
+                            endAdornment={
+                                          <WithStyles(InputAdornment)
+                                                        position="end"
+                                          >
+                                                        <WithStyles(IconButton)
+                                                                      aria-label="Toggle password visibility"
+                                                                      onClick={[Function]}
+                                                                      onMouseDown={[Function]}
+                                                                      style={
+                                                                                    Object {
+                                                                                                  "color": "grey",
+                                                                                                }
+                                                                      }
+                                                        >
+                                                                      <pure(Visibility) />
+                                                        </WithStyles(IconButton)>
+                                          </WithStyles(InputAdornment)>
+                            }
+                            id="adornment-password"
+                            onChange={[Function]}
+                            type="password"
+                            value=""
+              />
+</WithStyles(FormControl)>,
+            <br />,
+            <br />,
+            <br />,
+            <WithStyles(Button)
+              color="primary"
+              disabled={true}
+              fullWidth={true}
+              onClick={[Function]}
+              variant="contained"
+>
+              Sign In
+</WithStyles(Button)>,
+            <br />,
+            <br />,
+            <WithStyles(Button)
+              color="default"
+              href="/signup"
+              variant="flat"
+>
+              Sign Up
+</WithStyles(Button)>,
+            "  |  ",
+            <WithStyles(Button)
+              color="default"
+              onClick={[Function]}
+              variant="flat"
+>
+              Forgot password
+</WithStyles(Button)>,
+            <WithStyles(Modal)
+              aria-describedby="simple-modal-description"
+              aria-labelledby="simple-modal-title"
+              onClose={[Function]}
+              open={false}
+>
+              <div
+                            className="modal"
+              >
+                            <div
+                                          onClick={[Function]}
+                                          style={
+                                                        Object {
+                                                                      "float": "right",
+                                                                    }
+                                          }
+                            >
+                                          x
+                            </div>
+                            <br />
+                            <br />
+                            <b>
+                                          A code will be sent to you email
+                            </b>
+                            <TextField
+                                          label="Email"
+                                          margin="normal"
+                                          onChange={[Function]}
+                                          required={false}
+                                          select={false}
+                                          value=""
+                            />
+                            <br />
+                            <br />
+                            <WithStyles(Button)
+                                          color="primary"
+                                          onClick={[Function]}
+                                          variant="contained"
+                            >
+                                          Request Code
+                            </WithStyles(Button)>
+                            <br />
+                            <br />
+                            <hr />
+                            <br />
+                            <b>
+                                          If you have the code,
+                                          <br />
+                                          enter your email, code
+                                          <br />
+                                          and new password
+                            </b>
+                            <TextField
+                                          label="Email"
+                                          margin="normal"
+                                          onChange={[Function]}
+                                          required={false}
+                                          select={false}
+                                          value=""
+                            />
+                            <TextField
+                                          id="code"
+                                          label="Enter Code"
+                                          margin="normal"
+                                          onChange={[Function]}
+                                          required={false}
+                                          select={false}
+                                          value=""
+                            />
+                            <WithStyles(FormControl)
+                                          className="full-width"
+                            >
+                                          <WithStyles(InputLabel)
+                                                        htmlFor="adornment-password"
+                                          >
+                                                        New Password
+                                          </WithStyles(InputLabel)>
+                                          <WithStyles(Input)
+                                                        endAdornment={
+                                                                      <WithStyles(InputAdornment)
+                                                                                    position="end"
+                                                                      >
+                                                                                    <WithStyles(IconButton)
+                                                                                                  aria-label="Toggle password visibility"
+                                                                                                  onClick={[Function]}
+                                                                                                  onMouseDown={[Function]}
+                                                                                                  style={
+                                                                                                                Object {
+                                                                                                                              "color": "grey",
+                                                                                                                            }
+                                                                                                  }
+                                                                                    >
+                                                                                                  <pure(Visibility) />
+                                                                                    </WithStyles(IconButton)>
+                                                                      </WithStyles(InputAdornment)>
+                                                        }
+                                                        id="adornment-password"
+                                                        onChange={[Function]}
+                                                        type="password"
+                                                        value=""
+                                          />
+                            </WithStyles(FormControl)>
+                            <br />
+                            <br />
+                            <WithStyles(Button)
+                                          color="primary"
+                                          onClick={[Function]}
+                                          variant="contained"
+                            >
+                                          Submit
+                            </WithStyles(Button)>
+              </div>
+</WithStyles(Modal)>,
+            <div
+              className="auth-footer"
+>
+              Authentications powered by 
+              <a
+                            href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            AWS Cognito
+              </a>
+              <br />
+              <br />
+              <a
+                            href="https://www.henryszeto.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            Henry Szeto
+              </a>
+               2018
+</div>,
+          ],
+          "className": "auth-card-inner",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <b>
+                React JS To-Do App
+</b>,
+              "className": "app-name",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "React JS To-Do App",
+              },
+              "ref": null,
+              "rendered": "React JS To-Do App",
+              "type": "b",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sign In",
+            },
+            "ref": null,
+            "rendered": "Sign In",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "full-width",
+              "id": "email",
+              "label": "Email",
+              "margin": "normal",
+              "onChange": [Function],
+              "required": false,
+              "select": false,
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InputLabel)
+                  htmlFor="adornment-password"
+>
+                  Password
+</WithStyles(InputLabel)>,
+                <WithStyles(Input)
+                  endAdornment={
+                                    <WithStyles(InputAdornment)
+                                                      position="end"
+                                    >
+                                                      <WithStyles(IconButton)
+                                                                        aria-label="Toggle password visibility"
+                                                                        onClick={[Function]}
+                                                                        onMouseDown={[Function]}
+                                                                        style={
+                                                                                          Object {
+                                                                                                            "color": "grey",
+                                                                                                          }
+                                                                        }
+                                                      >
+                                                                        <pure(Visibility) />
+                                                      </WithStyles(IconButton)>
+                                    </WithStyles(InputAdornment)>
+                  }
+                  id="adornment-password"
+                  onChange={[Function]}
+                  type="password"
+                  value=""
+/>,
+              ],
+              "className": "full-width",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Password",
+                  "htmlFor": "adornment-password",
+                },
+                "ref": null,
+                "rendered": "Password",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "endAdornment": <WithStyles(InputAdornment)
+                    position="end"
+>
+                    <WithStyles(IconButton)
+                                        aria-label="Toggle password visibility"
+                                        onClick={[Function]}
+                                        onMouseDown={[Function]}
+                                        style={
+                                                            Object {
+                                                                                "color": "grey",
+                                                                              }
+                                        }
+                    >
+                                        <pure(Visibility) />
+                    </WithStyles(IconButton)>
+</WithStyles(InputAdornment)>,
+                  "id": "adornment-password",
+                  "onChange": [Function],
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Sign In",
+              "color": "primary",
+              "disabled": true,
+              "fullWidth": true,
+              "onClick": [Function],
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": "Sign In",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Sign Up",
+              "color": "default",
+              "href": "/signup",
+              "variant": "flat",
+            },
+            "ref": null,
+            "rendered": "Sign Up",
+            "type": [Function],
+          },
+          "  |  ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Forgot password",
+              "color": "default",
+              "onClick": [Function],
+              "variant": "flat",
+            },
+            "ref": null,
+            "rendered": "Forgot password",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "aria-describedby": "simple-modal-description",
+              "aria-labelledby": "simple-modal-title",
+              "children": <div
+                className="modal"
+>
+                <div
+                                onClick={[Function]}
+                                style={
+                                                Object {
+                                                                "float": "right",
+                                                              }
+                                }
+                >
+                                x
+                </div>
+                <br />
+                <br />
+                <b>
+                                A code will be sent to you email
+                </b>
+                <TextField
+                                label="Email"
+                                margin="normal"
+                                onChange={[Function]}
+                                required={false}
+                                select={false}
+                                value=""
+                />
+                <br />
+                <br />
+                <WithStyles(Button)
+                                color="primary"
+                                onClick={[Function]}
+                                variant="contained"
+                >
+                                Request Code
+                </WithStyles(Button)>
+                <br />
+                <br />
+                <hr />
+                <br />
+                <b>
+                                If you have the code,
+                                <br />
+                                enter your email, code
+                                <br />
+                                and new password
+                </b>
+                <TextField
+                                label="Email"
+                                margin="normal"
+                                onChange={[Function]}
+                                required={false}
+                                select={false}
+                                value=""
+                />
+                <TextField
+                                id="code"
+                                label="Enter Code"
+                                margin="normal"
+                                onChange={[Function]}
+                                required={false}
+                                select={false}
+                                value=""
+                />
+                <WithStyles(FormControl)
+                                className="full-width"
+                >
+                                <WithStyles(InputLabel)
+                                                htmlFor="adornment-password"
+                                >
+                                                New Password
+                                </WithStyles(InputLabel)>
+                                <WithStyles(Input)
+                                                endAdornment={
+                                                                <WithStyles(InputAdornment)
+                                                                                position="end"
+                                                                >
+                                                                                <WithStyles(IconButton)
+                                                                                                aria-label="Toggle password visibility"
+                                                                                                onClick={[Function]}
+                                                                                                onMouseDown={[Function]}
+                                                                                                style={
+                                                                                                                Object {
+                                                                                                                                "color": "grey",
+                                                                                                                              }
+                                                                                                }
+                                                                                >
+                                                                                                <pure(Visibility) />
+                                                                                </WithStyles(IconButton)>
+                                                                </WithStyles(InputAdornment)>
+                                                }
+                                                id="adornment-password"
+                                                onChange={[Function]}
+                                                type="password"
+                                                value=""
+                                />
+                </WithStyles(FormControl)>
+                <br />
+                <br />
+                <WithStyles(Button)
+                                color="primary"
+                                onClick={[Function]}
+                                variant="contained"
+                >
+                                Submit
+                </WithStyles(Button)>
+</div>,
+              "onClose": [Function],
+              "open": false,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    onClick={[Function]}
+                    style={
+                                        Object {
+                                                            "float": "right",
+                                                          }
+                    }
+>
+                    x
+</div>,
+                  <br />,
+                  <br />,
+                  <b>
+                    A code will be sent to you email
+</b>,
+                  <TextField
+                    label="Email"
+                    margin="normal"
+                    onChange={[Function]}
+                    required={false}
+                    select={false}
+                    value=""
+/>,
+                  <br />,
+                  <br />,
+                  <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+                    variant="contained"
+>
+                    Request Code
+</WithStyles(Button)>,
+                  <br />,
+                  <br />,
+                  <hr />,
+                  <br />,
+                  <b>
+                    If you have the code,
+                    <br />
+                    enter your email, code
+                    <br />
+                    and new password
+</b>,
+                  <TextField
+                    label="Email"
+                    margin="normal"
+                    onChange={[Function]}
+                    required={false}
+                    select={false}
+                    value=""
+/>,
+                  <TextField
+                    id="code"
+                    label="Enter Code"
+                    margin="normal"
+                    onChange={[Function]}
+                    required={false}
+                    select={false}
+                    value=""
+/>,
+                  <WithStyles(FormControl)
+                    className="full-width"
+>
+                    <WithStyles(InputLabel)
+                                        htmlFor="adornment-password"
+                    >
+                                        New Password
+                    </WithStyles(InputLabel)>
+                    <WithStyles(Input)
+                                        endAdornment={
+                                                            <WithStyles(InputAdornment)
+                                                                                position="end"
+                                                            >
+                                                                                <WithStyles(IconButton)
+                                                                                                    aria-label="Toggle password visibility"
+                                                                                                    onClick={[Function]}
+                                                                                                    onMouseDown={[Function]}
+                                                                                                    style={
+                                                                                                                        Object {
+                                                                                                                                            "color": "grey",
+                                                                                                                                          }
+                                                                                                    }
+                                                                                >
+                                                                                                    <pure(Visibility) />
+                                                                                </WithStyles(IconButton)>
+                                                            </WithStyles(InputAdornment)>
+                                        }
+                                        id="adornment-password"
+                                        onChange={[Function]}
+                                        type="password"
+                                        value=""
+                    />
+</WithStyles(FormControl)>,
+                  <br />,
+                  <br />,
+                  <WithStyles(Button)
+                    color="primary"
+                    onClick={[Function]}
+                    variant="contained"
+>
+                    Submit
+</WithStyles(Button)>,
+                ],
+                "className": "modal",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "x",
+                    "onClick": [Function],
+                    "style": Object {
+                      "float": "right",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "x",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "A code will be sent to you email",
+                  },
+                  "ref": null,
+                  "rendered": "A code will be sent to you email",
+                  "type": "b",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Email",
+                    "margin": "normal",
+                    "onChange": [Function],
+                    "required": false,
+                    "select": false,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Request Code",
+                    "color": "primary",
+                    "onClick": [Function],
+                    "variant": "contained",
+                  },
+                  "ref": null,
+                  "rendered": "Request Code",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "If you have the code,",
+                      <br />,
+                      "enter your email, code",
+                      <br />,
+                      "and new password",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "If you have the code,",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    "enter your email, code",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    "and new password",
+                  ],
+                  "type": "b",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Email",
+                    "margin": "normal",
+                    "onChange": [Function],
+                    "required": false,
+                    "select": false,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "code",
+                    "label": "Enter Code",
+                    "margin": "normal",
+                    "onChange": [Function],
+                    "required": false,
+                    "select": false,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(InputLabel)
+                        htmlFor="adornment-password"
+>
+                        New Password
+</WithStyles(InputLabel)>,
+                      <WithStyles(Input)
+                        endAdornment={
+                                                <WithStyles(InputAdornment)
+                                                                        position="end"
+                                                >
+                                                                        <WithStyles(IconButton)
+                                                                                                aria-label="Toggle password visibility"
+                                                                                                onClick={[Function]}
+                                                                                                onMouseDown={[Function]}
+                                                                                                style={
+                                                                                                                        Object {
+                                                                                                                                                "color": "grey",
+                                                                                                                                              }
+                                                                                                }
+                                                                        >
+                                                                                                <pure(Visibility) />
+                                                                        </WithStyles(IconButton)>
+                                                </WithStyles(InputAdornment)>
+                        }
+                        id="adornment-password"
+                        onChange={[Function]}
+                        type="password"
+                        value=""
+/>,
+                    ],
+                    "className": "full-width",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "New Password",
+                        "htmlFor": "adornment-password",
+                      },
+                      "ref": null,
+                      "rendered": "New Password",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "endAdornment": <WithStyles(InputAdornment)
+                          position="end"
+>
+                          <WithStyles(IconButton)
+                                                    aria-label="Toggle password visibility"
+                                                    onClick={[Function]}
+                                                    onMouseDown={[Function]}
+                                                    style={
+                                                                              Object {
+                                                                                                        "color": "grey",
+                                                                                                      }
+                                                    }
+                          >
+                                                    <pure(Visibility) />
+                          </WithStyles(IconButton)>
+</WithStyles(InputAdornment)>,
+                        "id": "adornment-password",
+                        "onChange": [Function],
+                        "type": "password",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Submit",
+                    "color": "primary",
+                    "onClick": [Function],
+                    "variant": "contained",
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Authentications powered by ",
+                <a
+                  href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  AWS Cognito
+</a>,
+                <br />,
+                <br />,
+                <a
+                  href="https://www.henryszeto.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  Henry Szeto
+</a>,
+                " 2018",
+              ],
+              "className": "auth-footer",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Authentications powered by ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AWS Cognito",
+                  "href": "https://aws-amplify.github.io/amplify-js/media/authentication_guide.html",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "AWS Cognito",
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Henry Szeto",
+                  "href": "https://www.henryszeto.com",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "Henry Szeto",
+                "type": "a",
+              },
+              " 2018",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="auth-card-outer"
+          id="sign-in"
+>
+          <div
+                    className="auth-card-inner"
+          >
+                    <div
+                              className="app-name"
+                    >
+                              <b>
+                                        React JS To-Do App
+                              </b>
+                    </div>
+                    <h3>
+                              Sign In
+                    </h3>
+                    <TextField
+                              className="full-width"
+                              id="email"
+                              label="Email"
+                              margin="normal"
+                              onChange={[Function]}
+                              required={false}
+                              select={false}
+                              value=""
+                    />
+                    <br />
+                    <br />
+                    <WithStyles(FormControl)
+                              className="full-width"
+                    >
+                              <WithStyles(InputLabel)
+                                        htmlFor="adornment-password"
+                              >
+                                        Password
+                              </WithStyles(InputLabel)>
+                              <WithStyles(Input)
+                                        endAdornment={
+                                                  <WithStyles(InputAdornment)
+                                                            position="end"
+                                                  >
+                                                            <WithStyles(IconButton)
+                                                                      aria-label="Toggle password visibility"
+                                                                      onClick={[Function]}
+                                                                      onMouseDown={[Function]}
+                                                                      style={
+                                                                                Object {
+                                                                                          "color": "grey",
+                                                                                        }
+                                                                      }
+                                                            >
+                                                                      <pure(Visibility) />
+                                                            </WithStyles(IconButton)>
+                                                  </WithStyles(InputAdornment)>
+                                        }
+                                        id="adornment-password"
+                                        onChange={[Function]}
+                                        type="password"
+                                        value=""
+                              />
+                    </WithStyles(FormControl)>
+                    <br />
+                    <br />
+                    <br />
+                    <WithStyles(Button)
+                              color="primary"
+                              disabled={true}
+                              fullWidth={true}
+                              onClick={[Function]}
+                              variant="contained"
+                    >
+                              Sign In
+                    </WithStyles(Button)>
+                    <br />
+                    <br />
+                    <WithStyles(Button)
+                              color="default"
+                              href="/signup"
+                              variant="flat"
+                    >
+                              Sign Up
+                    </WithStyles(Button)>
+                      |  
+                    <WithStyles(Button)
+                              color="default"
+                              onClick={[Function]}
+                              variant="flat"
+                    >
+                              Forgot password
+                    </WithStyles(Button)>
+                    <WithStyles(Modal)
+                              aria-describedby="simple-modal-description"
+                              aria-labelledby="simple-modal-title"
+                              onClose={[Function]}
+                              open={false}
+                    >
+                              <div
+                                        className="modal"
+                              >
+                                        <div
+                                                  onClick={[Function]}
+                                                  style={
+                                                            Object {
+                                                                      "float": "right",
+                                                                    }
+                                                  }
+                                        >
+                                                  x
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <b>
+                                                  A code will be sent to you email
+                                        </b>
+                                        <TextField
+                                                  label="Email"
+                                                  margin="normal"
+                                                  onChange={[Function]}
+                                                  required={false}
+                                                  select={false}
+                                                  value=""
+                                        />
+                                        <br />
+                                        <br />
+                                        <WithStyles(Button)
+                                                  color="primary"
+                                                  onClick={[Function]}
+                                                  variant="contained"
+                                        >
+                                                  Request Code
+                                        </WithStyles(Button)>
+                                        <br />
+                                        <br />
+                                        <hr />
+                                        <br />
+                                        <b>
+                                                  If you have the code,
+                                                  <br />
+                                                  enter your email, code
+                                                  <br />
+                                                  and new password
+                                        </b>
+                                        <TextField
+                                                  label="Email"
+                                                  margin="normal"
+                                                  onChange={[Function]}
+                                                  required={false}
+                                                  select={false}
+                                                  value=""
+                                        />
+                                        <TextField
+                                                  id="code"
+                                                  label="Enter Code"
+                                                  margin="normal"
+                                                  onChange={[Function]}
+                                                  required={false}
+                                                  select={false}
+                                                  value=""
+                                        />
+                                        <WithStyles(FormControl)
+                                                  className="full-width"
+                                        >
+                                                  <WithStyles(InputLabel)
+                                                            htmlFor="adornment-password"
+                                                  >
+                                                            New Password
+                                                  </WithStyles(InputLabel)>
+                                                  <WithStyles(Input)
+                                                            endAdornment={
+                                                                      <WithStyles(InputAdornment)
+                                                                                position="end"
+                                                                      >
+                                                                                <WithStyles(IconButton)
+                                                                                          aria-label="Toggle password visibility"
+                                                                                          onClick={[Function]}
+                                                                                          onMouseDown={[Function]}
+                                                                                          style={
+                                                                                                    Object {
+                                                                                                              "color": "grey",
+                                                                                                            }
+                                                                                          }
+                                                                                >
+                                                                                          <pure(Visibility) />
+                                                                                </WithStyles(IconButton)>
+                                                                      </WithStyles(InputAdornment)>
+                                                            }
+                                                            id="adornment-password"
+                                                            onChange={[Function]}
+                                                            type="password"
+                                                            value=""
+                                                  />
+                                        </WithStyles(FormControl)>
+                                        <br />
+                                        <br />
+                                        <WithStyles(Button)
+                                                  color="primary"
+                                                  onClick={[Function]}
+                                                  variant="contained"
+                                        >
+                                                  Submit
+                                        </WithStyles(Button)>
+                              </div>
+                    </WithStyles(Modal)>
+                    <div
+                              className="auth-footer"
+                    >
+                              Authentications powered by 
+                              <a
+                                        href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                              >
+                                        AWS Cognito
+                              </a>
+                              <br />
+                              <br />
+                              <a
+                                        href="https://www.henryszeto.com"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                              >
+                                        Henry Szeto
+                              </a>
+                               2018
+                    </div>
+          </div>
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="auth-card-inner"
+>
+            <div
+                        className="app-name"
+            >
+                        <b>
+                                    React JS To-Do App
+                        </b>
+            </div>
+            <h3>
+                        Sign In
+            </h3>
+            <TextField
+                        className="full-width"
+                        id="email"
+                        label="Email"
+                        margin="normal"
+                        onChange={[Function]}
+                        required={false}
+                        select={false}
+                        value=""
+            />
+            <br />
+            <br />
+            <WithStyles(FormControl)
+                        className="full-width"
+            >
+                        <WithStyles(InputLabel)
+                                    htmlFor="adornment-password"
+                        >
+                                    Password
+                        </WithStyles(InputLabel)>
+                        <WithStyles(Input)
+                                    endAdornment={
+                                                <WithStyles(InputAdornment)
+                                                            position="end"
+                                                >
+                                                            <WithStyles(IconButton)
+                                                                        aria-label="Toggle password visibility"
+                                                                        onClick={[Function]}
+                                                                        onMouseDown={[Function]}
+                                                                        style={
+                                                                                    Object {
+                                                                                                "color": "grey",
+                                                                                              }
+                                                                        }
+                                                            >
+                                                                        <pure(Visibility) />
+                                                            </WithStyles(IconButton)>
+                                                </WithStyles(InputAdornment)>
+                                    }
+                                    id="adornment-password"
+                                    onChange={[Function]}
+                                    type="password"
+                                    value=""
+                        />
+            </WithStyles(FormControl)>
+            <br />
+            <br />
+            <br />
+            <WithStyles(Button)
+                        color="primary"
+                        disabled={true}
+                        fullWidth={true}
+                        onClick={[Function]}
+                        variant="contained"
+            >
+                        Sign In
+            </WithStyles(Button)>
+            <br />
+            <br />
+            <WithStyles(Button)
+                        color="default"
+                        href="/signup"
+                        variant="flat"
+            >
+                        Sign Up
+            </WithStyles(Button)>
+              |  
+            <WithStyles(Button)
+                        color="default"
+                        onClick={[Function]}
+                        variant="flat"
+            >
+                        Forgot password
+            </WithStyles(Button)>
+            <WithStyles(Modal)
+                        aria-describedby="simple-modal-description"
+                        aria-labelledby="simple-modal-title"
+                        onClose={[Function]}
+                        open={false}
+            >
+                        <div
+                                    className="modal"
+                        >
+                                    <div
+                                                onClick={[Function]}
+                                                style={
+                                                            Object {
+                                                                        "float": "right",
+                                                                      }
+                                                }
+                                    >
+                                                x
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <b>
+                                                A code will be sent to you email
+                                    </b>
+                                    <TextField
+                                                label="Email"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                    />
+                                    <br />
+                                    <br />
+                                    <WithStyles(Button)
+                                                color="primary"
+                                                onClick={[Function]}
+                                                variant="contained"
+                                    >
+                                                Request Code
+                                    </WithStyles(Button)>
+                                    <br />
+                                    <br />
+                                    <hr />
+                                    <br />
+                                    <b>
+                                                If you have the code,
+                                                <br />
+                                                enter your email, code
+                                                <br />
+                                                and new password
+                                    </b>
+                                    <TextField
+                                                label="Email"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                    />
+                                    <TextField
+                                                id="code"
+                                                label="Enter Code"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                    />
+                                    <WithStyles(FormControl)
+                                                className="full-width"
+                                    >
+                                                <WithStyles(InputLabel)
+                                                            htmlFor="adornment-password"
+                                                >
+                                                            New Password
+                                                </WithStyles(InputLabel)>
+                                                <WithStyles(Input)
+                                                            endAdornment={
+                                                                        <WithStyles(InputAdornment)
+                                                                                    position="end"
+                                                                        >
+                                                                                    <WithStyles(IconButton)
+                                                                                                aria-label="Toggle password visibility"
+                                                                                                onClick={[Function]}
+                                                                                                onMouseDown={[Function]}
+                                                                                                style={
+                                                                                                            Object {
+                                                                                                                        "color": "grey",
+                                                                                                                      }
+                                                                                                }
+                                                                                    >
+                                                                                                <pure(Visibility) />
+                                                                                    </WithStyles(IconButton)>
+                                                                        </WithStyles(InputAdornment)>
+                                                            }
+                                                            id="adornment-password"
+                                                            onChange={[Function]}
+                                                            type="password"
+                                                            value=""
+                                                />
+                                    </WithStyles(FormControl)>
+                                    <br />
+                                    <br />
+                                    <WithStyles(Button)
+                                                color="primary"
+                                                onClick={[Function]}
+                                                variant="contained"
+                                    >
+                                                Submit
+                                    </WithStyles(Button)>
+                        </div>
+            </WithStyles(Modal)>
+            <div
+                        className="auth-footer"
+            >
+                        Authentications powered by 
+                        <a
+                                    href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    AWS Cognito
+                        </a>
+                        <br />
+                        <br />
+                        <a
+                                    href="https://www.henryszeto.com"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    Henry Szeto
+                        </a>
+                         2018
+            </div>
+</div>,
+          "className": "auth-card-outer",
+          "id": "sign-in",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="app-name"
+>
+                <b>
+                                React JS To-Do App
+                </b>
+</div>,
+              <h3>
+                Sign In
+</h3>,
+              <TextField
+                className="full-width"
+                id="email"
+                label="Email"
+                margin="normal"
+                onChange={[Function]}
+                required={false}
+                select={false}
+                value=""
+/>,
+              <br />,
+              <br />,
+              <WithStyles(FormControl)
+                className="full-width"
+>
+                <WithStyles(InputLabel)
+                                htmlFor="adornment-password"
+                >
+                                Password
+                </WithStyles(InputLabel)>
+                <WithStyles(Input)
+                                endAdornment={
+                                                <WithStyles(InputAdornment)
+                                                                position="end"
+                                                >
+                                                                <WithStyles(IconButton)
+                                                                                aria-label="Toggle password visibility"
+                                                                                onClick={[Function]}
+                                                                                onMouseDown={[Function]}
+                                                                                style={
+                                                                                                Object {
+                                                                                                                "color": "grey",
+                                                                                                              }
+                                                                                }
+                                                                >
+                                                                                <pure(Visibility) />
+                                                                </WithStyles(IconButton)>
+                                                </WithStyles(InputAdornment)>
+                                }
+                                id="adornment-password"
+                                onChange={[Function]}
+                                type="password"
+                                value=""
+                />
+</WithStyles(FormControl)>,
+              <br />,
+              <br />,
+              <br />,
+              <WithStyles(Button)
+                color="primary"
+                disabled={true}
+                fullWidth={true}
+                onClick={[Function]}
+                variant="contained"
+>
+                Sign In
+</WithStyles(Button)>,
+              <br />,
+              <br />,
+              <WithStyles(Button)
+                color="default"
+                href="/signup"
+                variant="flat"
+>
+                Sign Up
+</WithStyles(Button)>,
+              "  |  ",
+              <WithStyles(Button)
+                color="default"
+                onClick={[Function]}
+                variant="flat"
+>
+                Forgot password
+</WithStyles(Button)>,
+              <WithStyles(Modal)
+                aria-describedby="simple-modal-description"
+                aria-labelledby="simple-modal-title"
+                onClose={[Function]}
+                open={false}
+>
+                <div
+                                className="modal"
+                >
+                                <div
+                                                onClick={[Function]}
+                                                style={
+                                                                Object {
+                                                                                "float": "right",
+                                                                              }
+                                                }
+                                >
+                                                x
+                                </div>
+                                <br />
+                                <br />
+                                <b>
+                                                A code will be sent to you email
+                                </b>
+                                <TextField
+                                                label="Email"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                />
+                                <br />
+                                <br />
+                                <WithStyles(Button)
+                                                color="primary"
+                                                onClick={[Function]}
+                                                variant="contained"
+                                >
+                                                Request Code
+                                </WithStyles(Button)>
+                                <br />
+                                <br />
+                                <hr />
+                                <br />
+                                <b>
+                                                If you have the code,
+                                                <br />
+                                                enter your email, code
+                                                <br />
+                                                and new password
+                                </b>
+                                <TextField
+                                                label="Email"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                />
+                                <TextField
+                                                id="code"
+                                                label="Enter Code"
+                                                margin="normal"
+                                                onChange={[Function]}
+                                                required={false}
+                                                select={false}
+                                                value=""
+                                />
+                                <WithStyles(FormControl)
+                                                className="full-width"
+                                >
+                                                <WithStyles(InputLabel)
+                                                                htmlFor="adornment-password"
+                                                >
+                                                                New Password
+                                                </WithStyles(InputLabel)>
+                                                <WithStyles(Input)
+                                                                endAdornment={
+                                                                                <WithStyles(InputAdornment)
+                                                                                                position="end"
+                                                                                >
+                                                                                                <WithStyles(IconButton)
+                                                                                                                aria-label="Toggle password visibility"
+                                                                                                                onClick={[Function]}
+                                                                                                                onMouseDown={[Function]}
+                                                                                                                style={
+                                                                                                                                Object {
+                                                                                                                                                "color": "grey",
+                                                                                                                                              }
+                                                                                                                }
+                                                                                                >
+                                                                                                                <pure(Visibility) />
+                                                                                                </WithStyles(IconButton)>
+                                                                                </WithStyles(InputAdornment)>
+                                                                }
+                                                                id="adornment-password"
+                                                                onChange={[Function]}
+                                                                type="password"
+                                                                value=""
+                                                />
+                                </WithStyles(FormControl)>
+                                <br />
+                                <br />
+                                <WithStyles(Button)
+                                                color="primary"
+                                                onClick={[Function]}
+                                                variant="contained"
+                                >
+                                                Submit
+                                </WithStyles(Button)>
+                </div>
+</WithStyles(Modal)>,
+              <div
+                className="auth-footer"
+>
+                Authentications powered by 
+                <a
+                                href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                AWS Cognito
+                </a>
+                <br />
+                <br />
+                <a
+                                href="https://www.henryszeto.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                Henry Szeto
+                </a>
+                 2018
+</div>,
+            ],
+            "className": "auth-card-inner",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <b>
+                  React JS To-Do App
+</b>,
+                "className": "app-name",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "React JS To-Do App",
+                },
+                "ref": null,
+                "rendered": "React JS To-Do App",
+                "type": "b",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign In",
+              },
+              "ref": null,
+              "rendered": "Sign In",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "full-width",
+                "id": "email",
+                "label": "Email",
+                "margin": "normal",
+                "onChange": [Function],
+                "required": false,
+                "select": false,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(InputLabel)
+                    htmlFor="adornment-password"
+>
+                    Password
+</WithStyles(InputLabel)>,
+                  <WithStyles(Input)
+                    endAdornment={
+                                        <WithStyles(InputAdornment)
+                                                            position="end"
+                                        >
+                                                            <WithStyles(IconButton)
+                                                                                aria-label="Toggle password visibility"
+                                                                                onClick={[Function]}
+                                                                                onMouseDown={[Function]}
+                                                                                style={
+                                                                                                    Object {
+                                                                                                                        "color": "grey",
+                                                                                                                      }
+                                                                                }
+                                                            >
+                                                                                <pure(Visibility) />
+                                                            </WithStyles(IconButton)>
+                                        </WithStyles(InputAdornment)>
+                    }
+                    id="adornment-password"
+                    onChange={[Function]}
+                    type="password"
+                    value=""
+/>,
+                ],
+                "className": "full-width",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Password",
+                    "htmlFor": "adornment-password",
+                  },
+                  "ref": null,
+                  "rendered": "Password",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "endAdornment": <WithStyles(InputAdornment)
+                      position="end"
+>
+                      <WithStyles(IconButton)
+                                            aria-label="Toggle password visibility"
+                                            onClick={[Function]}
+                                            onMouseDown={[Function]}
+                                            style={
+                                                                  Object {
+                                                                                        "color": "grey",
+                                                                                      }
+                                            }
+                      >
+                                            <pure(Visibility) />
+                      </WithStyles(IconButton)>
+</WithStyles(InputAdornment)>,
+                    "id": "adornment-password",
+                    "onChange": [Function],
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Sign In",
+                "color": "primary",
+                "disabled": true,
+                "fullWidth": true,
+                "onClick": [Function],
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": "Sign In",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Sign Up",
+                "color": "default",
+                "href": "/signup",
+                "variant": "flat",
+              },
+              "ref": null,
+              "rendered": "Sign Up",
+              "type": [Function],
+            },
+            "  |  ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Forgot password",
+                "color": "default",
+                "onClick": [Function],
+                "variant": "flat",
+              },
+              "ref": null,
+              "rendered": "Forgot password",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "aria-describedby": "simple-modal-description",
+                "aria-labelledby": "simple-modal-title",
+                "children": <div
+                  className="modal"
+>
+                  <div
+                                    onClick={[Function]}
+                                    style={
+                                                      Object {
+                                                                        "float": "right",
+                                                                      }
+                                    }
+                  >
+                                    x
+                  </div>
+                  <br />
+                  <br />
+                  <b>
+                                    A code will be sent to you email
+                  </b>
+                  <TextField
+                                    label="Email"
+                                    margin="normal"
+                                    onChange={[Function]}
+                                    required={false}
+                                    select={false}
+                                    value=""
+                  />
+                  <br />
+                  <br />
+                  <WithStyles(Button)
+                                    color="primary"
+                                    onClick={[Function]}
+                                    variant="contained"
+                  >
+                                    Request Code
+                  </WithStyles(Button)>
+                  <br />
+                  <br />
+                  <hr />
+                  <br />
+                  <b>
+                                    If you have the code,
+                                    <br />
+                                    enter your email, code
+                                    <br />
+                                    and new password
+                  </b>
+                  <TextField
+                                    label="Email"
+                                    margin="normal"
+                                    onChange={[Function]}
+                                    required={false}
+                                    select={false}
+                                    value=""
+                  />
+                  <TextField
+                                    id="code"
+                                    label="Enter Code"
+                                    margin="normal"
+                                    onChange={[Function]}
+                                    required={false}
+                                    select={false}
+                                    value=""
+                  />
+                  <WithStyles(FormControl)
+                                    className="full-width"
+                  >
+                                    <WithStyles(InputLabel)
+                                                      htmlFor="adornment-password"
+                                    >
+                                                      New Password
+                                    </WithStyles(InputLabel)>
+                                    <WithStyles(Input)
+                                                      endAdornment={
+                                                                        <WithStyles(InputAdornment)
+                                                                                          position="end"
+                                                                        >
+                                                                                          <WithStyles(IconButton)
+                                                                                                            aria-label="Toggle password visibility"
+                                                                                                            onClick={[Function]}
+                                                                                                            onMouseDown={[Function]}
+                                                                                                            style={
+                                                                                                                              Object {
+                                                                                                                                                "color": "grey",
+                                                                                                                                              }
+                                                                                                            }
+                                                                                          >
+                                                                                                            <pure(Visibility) />
+                                                                                          </WithStyles(IconButton)>
+                                                                        </WithStyles(InputAdornment)>
+                                                      }
+                                                      id="adornment-password"
+                                                      onChange={[Function]}
+                                                      type="password"
+                                                      value=""
+                                    />
+                  </WithStyles(FormControl)>
+                  <br />
+                  <br />
+                  <WithStyles(Button)
+                                    color="primary"
+                                    onClick={[Function]}
+                                    variant="contained"
+                  >
+                                    Submit
+                  </WithStyles(Button)>
+</div>,
+                "onClose": [Function],
+                "open": false,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      onClick={[Function]}
+                      style={
+                                            Object {
+                                                                  "float": "right",
+                                                                }
+                      }
+>
+                      x
+</div>,
+                    <br />,
+                    <br />,
+                    <b>
+                      A code will be sent to you email
+</b>,
+                    <TextField
+                      label="Email"
+                      margin="normal"
+                      onChange={[Function]}
+                      required={false}
+                      select={false}
+                      value=""
+/>,
+                    <br />,
+                    <br />,
+                    <WithStyles(Button)
+                      color="primary"
+                      onClick={[Function]}
+                      variant="contained"
+>
+                      Request Code
+</WithStyles(Button)>,
+                    <br />,
+                    <br />,
+                    <hr />,
+                    <br />,
+                    <b>
+                      If you have the code,
+                      <br />
+                      enter your email, code
+                      <br />
+                      and new password
+</b>,
+                    <TextField
+                      label="Email"
+                      margin="normal"
+                      onChange={[Function]}
+                      required={false}
+                      select={false}
+                      value=""
+/>,
+                    <TextField
+                      id="code"
+                      label="Enter Code"
+                      margin="normal"
+                      onChange={[Function]}
+                      required={false}
+                      select={false}
+                      value=""
+/>,
+                    <WithStyles(FormControl)
+                      className="full-width"
+>
+                      <WithStyles(InputLabel)
+                                            htmlFor="adornment-password"
+                      >
+                                            New Password
+                      </WithStyles(InputLabel)>
+                      <WithStyles(Input)
+                                            endAdornment={
+                                                                  <WithStyles(InputAdornment)
+                                                                                        position="end"
+                                                                  >
+                                                                                        <WithStyles(IconButton)
+                                                                                                              aria-label="Toggle password visibility"
+                                                                                                              onClick={[Function]}
+                                                                                                              onMouseDown={[Function]}
+                                                                                                              style={
+                                                                                                                                    Object {
+                                                                                                                                                          "color": "grey",
+                                                                                                                                                        }
+                                                                                                              }
+                                                                                        >
+                                                                                                              <pure(Visibility) />
+                                                                                        </WithStyles(IconButton)>
+                                                                  </WithStyles(InputAdornment)>
+                                            }
+                                            id="adornment-password"
+                                            onChange={[Function]}
+                                            type="password"
+                                            value=""
+                      />
+</WithStyles(FormControl)>,
+                    <br />,
+                    <br />,
+                    <WithStyles(Button)
+                      color="primary"
+                      onClick={[Function]}
+                      variant="contained"
+>
+                      Submit
+</WithStyles(Button)>,
+                  ],
+                  "className": "modal",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "x",
+                      "onClick": [Function],
+                      "style": Object {
+                        "float": "right",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "x",
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "A code will be sent to you email",
+                    },
+                    "ref": null,
+                    "rendered": "A code will be sent to you email",
+                    "type": "b",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "label": "Email",
+                      "margin": "normal",
+                      "onChange": [Function],
+                      "required": false,
+                      "select": false,
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Request Code",
+                      "color": "primary",
+                      "onClick": [Function],
+                      "variant": "contained",
+                    },
+                    "ref": null,
+                    "rendered": "Request Code",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "hr",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "If you have the code,",
+                        <br />,
+                        "enter your email, code",
+                        <br />,
+                        "and new password",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "If you have the code,",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      "enter your email, code",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      "and new password",
+                    ],
+                    "type": "b",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "label": "Email",
+                      "margin": "normal",
+                      "onChange": [Function],
+                      "required": false,
+                      "select": false,
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "code",
+                      "label": "Enter Code",
+                      "margin": "normal",
+                      "onChange": [Function],
+                      "required": false,
+                      "select": false,
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <WithStyles(InputLabel)
+                          htmlFor="adornment-password"
+>
+                          New Password
+</WithStyles(InputLabel)>,
+                        <WithStyles(Input)
+                          endAdornment={
+                                                    <WithStyles(InputAdornment)
+                                                                              position="end"
+                                                    >
+                                                                              <WithStyles(IconButton)
+                                                                                                        aria-label="Toggle password visibility"
+                                                                                                        onClick={[Function]}
+                                                                                                        onMouseDown={[Function]}
+                                                                                                        style={
+                                                                                                                                  Object {
+                                                                                                                                                            "color": "grey",
+                                                                                                                                                          }
+                                                                                                        }
+                                                                              >
+                                                                                                        <pure(Visibility) />
+                                                                              </WithStyles(IconButton)>
+                                                    </WithStyles(InputAdornment)>
+                          }
+                          id="adornment-password"
+                          onChange={[Function]}
+                          type="password"
+                          value=""
+/>,
+                      ],
+                      "className": "full-width",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "New Password",
+                          "htmlFor": "adornment-password",
+                        },
+                        "ref": null,
+                        "rendered": "New Password",
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "endAdornment": <WithStyles(InputAdornment)
+                            position="end"
+>
+                            <WithStyles(IconButton)
+                                                        aria-label="Toggle password visibility"
+                                                        onClick={[Function]}
+                                                        onMouseDown={[Function]}
+                                                        style={
+                                                                                    Object {
+                                                                                                                "color": "grey",
+                                                                                                              }
+                                                        }
+                            >
+                                                        <pure(Visibility) />
+                            </WithStyles(IconButton)>
+</WithStyles(InputAdornment)>,
+                          "id": "adornment-password",
+                          "onChange": [Function],
+                          "type": "password",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Submit",
+                      "color": "primary",
+                      "onClick": [Function],
+                      "variant": "contained",
+                    },
+                    "ref": null,
+                    "rendered": "Submit",
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Authentications powered by ",
+                  <a
+                    href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    AWS Cognito
+</a>,
+                  <br />,
+                  <br />,
+                  <a
+                    href="https://www.henryszeto.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    Henry Szeto
+</a>,
+                  " 2018",
+                ],
+                "className": "auth-footer",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Authentications powered by ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "AWS Cognito",
+                    "href": "https://aws-amplify.github.io/amplify-js/media/authentication_guide.html",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "AWS Cognito",
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Henry Szeto",
+                    "href": "https://www.henryszeto.com",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "Henry Szeto",
+                  "type": "a",
+                },
+                " 2018",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "disableLifecycleMethods": true,
+    "hydrateIn": undefined,
+  },
+}
+`;
