@@ -7,7 +7,7 @@ export const authenticate = (email, password) => {
   return dispatch => {
     dispatch({ type: START_LOADING });
 
-    Auth.signIn(email, password)
+    return Auth.signIn(email, password)
       .then(user => {
         dispatch({
           type: SET_USER,
