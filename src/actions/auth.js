@@ -48,7 +48,7 @@ export const register = (email, password) => {
 
 export const validateCode = (email, code) => {
   return dispatch => {
-    Auth.confirmSignUp(email, code)
+    return Auth.confirmSignUp(email, code)
       .then(data => {
         alert("Registration success! Please login now.");
         history.push('/');
@@ -62,7 +62,7 @@ export const validateCode = (email, code) => {
 
 export const resetPassword = email => {
   return dispatch => {
-    Auth.forgotPassword(email)
+    return Auth.forgotPassword(email)
       .then(data => {
         alert("Check your email for the code.");
       })
