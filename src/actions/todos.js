@@ -21,7 +21,7 @@ export const getTodos = (jwt) => {
           resolve(true);
         })
         .catch(err => {
-          alert("Error: " + err.statusText);
+          alert("Error: " + (err.statusText || err));
 
           reject( err );
         });
