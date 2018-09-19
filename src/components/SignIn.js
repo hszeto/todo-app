@@ -99,6 +99,7 @@ export class SignIn extends Component {
                   <InputLabel htmlFor="adornment-password">Password</InputLabel>
                   <Input
                     id="adornment-password"
+                    className="current-password"
                     type={this.state.showPassword ? 'text' : 'password'}
                     value={this.state.password}
                     onChange={this.handleChange('password')}
@@ -119,6 +120,7 @@ export class SignIn extends Component {
                 <br /><br /><br />
 
                 <Button
+                  id="signIn-btn"
                   variant="contained"
                   color="primary"
                   fullWidth={true}

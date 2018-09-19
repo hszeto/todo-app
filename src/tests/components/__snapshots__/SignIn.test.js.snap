@@ -3,7 +3,12 @@
 exports[`SignIn renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignIn />,
+  Symbol(enzyme.__unrendered__): <SignIn
+    authenticate={[Function]}
+    pingServer={[Function]}
+    resetPassword={[Function]}
+    validateResetPasswordCode={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -55,6 +60,7 @@ ShallowWrapper {
                                 Password
                         </WithStyles(InputLabel)>
                         <WithStyles(Input)
+                                className="current-password"
                                 endAdornment={
                                         <WithStyles(InputAdornment)
                                                 position="end"
@@ -86,6 +92,7 @@ ShallowWrapper {
                         color="primary"
                         disabled={true}
                         fullWidth={true}
+                        id="signIn-btn"
                         onClick={[Function]}
                         variant="contained"
                 >
@@ -286,6 +293,7 @@ ShallowWrapper {
                               Password
                     </WithStyles(InputLabel)>
                     <WithStyles(Input)
+                              className="current-password"
                               endAdornment={
                                         <WithStyles(InputAdornment)
                                                   position="end"
@@ -317,6 +325,7 @@ ShallowWrapper {
                     color="primary"
                     disabled={true}
                     fullWidth={true}
+                    id="signIn-btn"
                     onClick={[Function]}
                     variant="contained"
           >
@@ -516,6 +525,7 @@ ShallowWrapper {
                             Password
               </WithStyles(InputLabel)>
               <WithStyles(Input)
+                            className="current-password"
                             endAdornment={
                                           <WithStyles(InputAdornment)
                                                         position="end"
@@ -547,6 +557,7 @@ ShallowWrapper {
               color="primary"
               disabled={true}
               fullWidth={true}
+              id="signIn-btn"
               onClick={[Function]}
               variant="contained"
 >
@@ -792,6 +803,7 @@ ShallowWrapper {
                   Password
 </WithStyles(InputLabel)>,
                 <WithStyles(Input)
+                  className="current-password"
                   endAdornment={
                                     <WithStyles(InputAdornment)
                                                       position="end"
@@ -837,6 +849,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "className": "current-password",
                   "endAdornment": <WithStyles(InputAdornment)
                     position="end"
 >
@@ -901,6 +914,7 @@ ShallowWrapper {
               "color": "primary",
               "disabled": true,
               "fullWidth": true,
+              "id": "signIn-btn",
               "onClick": [Function],
               "variant": "contained",
             },
@@ -1638,6 +1652,7 @@ ShallowWrapper {
                                         Password
                               </WithStyles(InputLabel)>
                               <WithStyles(Input)
+                                        className="current-password"
                                         endAdornment={
                                                   <WithStyles(InputAdornment)
                                                             position="end"
@@ -1669,6 +1684,7 @@ ShallowWrapper {
                               color="primary"
                               disabled={true}
                               fullWidth={true}
+                              id="signIn-btn"
                               onClick={[Function]}
                               variant="contained"
                     >
@@ -1869,6 +1885,7 @@ ShallowWrapper {
                                     Password
                         </WithStyles(InputLabel)>
                         <WithStyles(Input)
+                                    className="current-password"
                                     endAdornment={
                                                 <WithStyles(InputAdornment)
                                                             position="end"
@@ -1900,6 +1917,7 @@ ShallowWrapper {
                         color="primary"
                         disabled={true}
                         fullWidth={true}
+                        id="signIn-btn"
                         onClick={[Function]}
                         variant="contained"
             >
@@ -2099,6 +2117,7 @@ ShallowWrapper {
                                 Password
                 </WithStyles(InputLabel)>
                 <WithStyles(Input)
+                                className="current-password"
                                 endAdornment={
                                                 <WithStyles(InputAdornment)
                                                                 position="end"
@@ -2130,6 +2149,7 @@ ShallowWrapper {
                 color="primary"
                 disabled={true}
                 fullWidth={true}
+                id="signIn-btn"
                 onClick={[Function]}
                 variant="contained"
 >
@@ -2375,6 +2395,7 @@ ShallowWrapper {
                     Password
 </WithStyles(InputLabel)>,
                   <WithStyles(Input)
+                    className="current-password"
                     endAdornment={
                                         <WithStyles(InputAdornment)
                                                             position="end"
@@ -2420,6 +2441,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "className": "current-password",
                     "endAdornment": <WithStyles(InputAdornment)
                       position="end"
 >
@@ -2484,6 +2506,7 @@ ShallowWrapper {
                 "color": "primary",
                 "disabled": true,
                 "fullWidth": true,
+                "id": "signIn-btn",
                 "onClick": [Function],
                 "variant": "contained",
               },
@@ -3195,6 +3218,7 @@ ShallowWrapper {
       },
     },
     "attachTo": undefined,
+    "context": Object {},
     "disableLifecycleMethods": true,
     "hydrateIn": undefined,
   },
