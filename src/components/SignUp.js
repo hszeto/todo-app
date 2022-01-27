@@ -161,7 +161,7 @@ export class SignUp extends Component {
           <div className="auth-footer">
             Authentications powered by <a href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html" target="_blank" rel="noopener noreferrer">AWS Cognito</a>
             <br /><br />
-            <a href="https://www.henryszeto.com" target="_blank" rel="noopener noreferrer">Henry Szeto</a> 2018
+            <a href="https://www.henryszeto.com" target="_blank" rel="noopener noreferrer">Henry Szeto</a> 2022
           </div>
         </div>
       </div>
