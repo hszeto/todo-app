@@ -8,4 +8,5 @@ npm install if not already done so
 Need to run `heroku buildpacks:add https://github.com/mars/create-react-app-buildpack.git` to change NODE_ENV to production"
 
 #### Deployment:
-* Hosted on Render since Nov 2022
+* Switch from Heroku to Render in Nov 2022
+* Switch from Render to Heroku in Feb 2023

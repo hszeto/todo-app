@@ -1,6 +1,6 @@
 if (process.env.NODE_ENV === 'production') {
   module.exports = {
-    domain: 'https://todo-api-pczh.onrender.com',
+    domain: 'https://todo-rails5-api.herokuapp.com',
   };
 } else {
   module.exports = {
